@@ -305,14 +305,14 @@ endmacro()
 #------------------------
 macro(CassPolicies)
   # TODO: Figure out Mac OS X rpath
-  if(POLICY CMP0042)
-    cmake_policy(SET CMP0042 OLD)
-  endif()
+  #if(POLICY CMP0042)
+  #  cmake_policy(SET CMP0042 OLD)
+  #endif()
 
   # Force OLD style of project versioning variables
-  if(POLICY CMP0048)
-    cmake_policy(SET CMP0048 OLD)
-  endif()
+  #if(POLICY CMP0048)
+  #  cmake_policy(SET CMP0048 OLD)
+  #endif()
 endmacro()
 
 #------------------------
@@ -687,9 +687,9 @@ endmacro()
 #------------------------
 macro(CassSetCompilerFlags)
   # Force OLD style of implicitly dereferencing variables
-  if(POLICY CMP0054)
-    cmake_policy(SET CMP0054 OLD)
-  endif()
+  #if(POLICY CMP0054)
+  #  cmake_policy(SET CMP0054 OLD)
+  #endif()
 
   # Determine if all GNU extensions should be enabled
   if("${CMAKE_SYSTEM_NAME}" MATCHES "Linux")
